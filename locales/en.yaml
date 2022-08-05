@@ -224,6 +224,7 @@ channels:
       choose_language: |
         Choose channel language. The selected language will be used to notify users.
       periods:
+        hourly: per hour
         daily: per day
         weekly: per week
         monthly: per month
