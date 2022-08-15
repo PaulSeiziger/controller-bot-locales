@@ -217,10 +217,14 @@ channels:
       ${ photo ? 'Выбранная картинка: ' + photo : ''}
     create_subscription_link: |
       Для создания ссылки придумайте тег. Это поможет Вам отслеживать источники трафика.
+    confirm_create_subscription_link: |
+      Вы действительно хотите создать ссылку с тэгом (${tag})?
     no_have_subscription_link: |
       У Вас нет ссылок на подписки
     choose_language: |
       Укажите язык канала/группы. Выбранный язык буден использован для уведомлений подписчикам.
+    regenerated_link: |
+      Перейдите [по ссылке](${link}), чтобы вступить в приватный канал/группу
     periods:
       hourly: каждый час
       daily: каждый день
@@ -708,6 +712,7 @@ btn:
     full_statistics_report: Полный отчёт
     delete_tariff: Удалить тариф
     edit_subscription_settings: Редактировать настройки подписки
+    regenerateJoinLink: Пересоздать ссылку
 
   post:
     settings:

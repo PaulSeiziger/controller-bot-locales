@@ -219,10 +219,14 @@ channels:
         ${ photo ? 'Current Image: ' + photo : ''}
       create_subscription_link: |
         Enter the tag name to create a link. This is for tracking traffic sources.
+      confirm_create_subscription_link: |
+        Are you sure you want to link with the tag (${tag})?
       no_have_subscription_link: |
         You have not subscription links
       choose_language: |
         Choose channel language. The selected language will be used to notify users.
+      regenerated_link: |
+        Follow [the link](${link}) to join the channel
       periods:
         hourly: per hour
         daily: per day
@@ -688,6 +692,7 @@ btn:
     full_statistics_report: Full report
     delete_tariff: Delete tariff
     edit_subscription_settings: Edit settings
+    regenerateJoinLink: Recreate join link
 
   post:
     settings:
