@@ -138,12 +138,18 @@ channels:
         Channel with unconfigured subscription.
       channels_with_available_subscription: |
         Channels with configured subscription.
-        *ATTENTION* At the moment, payments are accepted only from the CIS
-      subscription_not_configured: Subscription not configured
+        *ATTENTION*
+        At the moment, payments are accepted only from the CIS
+      subscription_not_configured: |
+        At the moment you do not have paid channels configured.
+        *ATTENTION*
+        At the moment, payments are accepted only from the CIS
       enter_channel_description: |
        Send channel description. ${ description ? ' Send "-" to keep the default description (' + description + ')' : ''}
       settings_complete: The basic setup is complete, go to editing tariffs
       list_tariffs: To change the tariff, select it from the list below
+      current_tariffs: |
+        Current list of tariffs:
       enter_tariff_name: |
         Enter the name of the tariff or enter "-" to leave it blank. ${name ? 'Current: ' + name : ''}
       enter_tariff_currency: |
@@ -154,6 +160,7 @@ channels:
         Enter tariff price. (Currency: ${currency}, Period: ${localizedPeriod} )${price ? 'Current: ' + price + ' ' + currency : ''}
         Minimum: ${minimum} ${currency}
       tariff_complete: Tariff creation completed
+      manage_tariff: Manage tariff "${name}"
       start_subscription_process: |
         Subscribe to a channel: *${name}*
 
@@ -162,6 +169,7 @@ channels:
         Subscribe?
         ${photo ? '[\u200B](' + photo + ')' : '' }
       select_tariff: Select tariff
+      confirm_delete_tariff: Are you sure you want to remove the tariff?
       subscription_increased: |
         The current subscription has been extended to *${date}*.
 
@@ -218,7 +226,11 @@ channels:
         If you don't want to add or change an image just send a "-"
         ${ photo ? 'Current Image: ' + photo : ''}
       create_subscription_link: |
-        Enter the tag name to create a link. This is for tracking traffic sources.
+        Enter the tag name to create a link.
+        
+        As a tag, you can use the name of the platform on which you want to place a link for a paid subscription to your channel, or any other sign that will help you distinguish this link from others when there are several.
+
+        For example: “Advertising in channel XX”, “Test XX - 08/13/1941”
       confirm_create_subscription_link: |
         Are you sure you want to link with the tag (${tag})?
       no_have_subscription_link: |
@@ -228,15 +240,38 @@ channels:
       regenerated_link: |
         Follow [the link](${link}) to join the channel
       periods:
-        hourly: per hour
-        daily: per day
-        weekly: per week
-        monthly: per month
-        monthly_3: every 3 month
-        monthly_6: every 6 month
-        yearly: per year
-        yearly_2: every 2 years
-        yearly_3: every 3 years
+        hourly: Hour
+        daily: Day
+        weekly: Week
+        monthly: Month
+        monthly_3: 3 months
+        monthly_6: 6 months
+        yearly: year
+        yearly_2: 2 years
+        yearly_3: 3 years
+      subcontrol_description: |
+        Bot controller opens up new ways to monetize your channels!
+        
+        We see that the authors of unique content are increasingly looking towards its distribution through private Telegram channels, the subscription to which is carried out on a paid basis. And we feel their “pain” caused by the daily updating of the list of those who paid for the subscription.
+        
+        Manual moderation is a thing of the past - meet the paid subscriptions feature from @ControllerBot!
+        
+        *Follow 3 easy steps:*
+        1. Activate the feature on your private channel
+        2. Set up a "butler bot" according to detailed instructions, which will meet potential subscribers and offer them your rates
+        3. Pass the Butler Bot Link to Your Audience
+        
+        *We'll take care of the rest:*
+        1. Accepting payments for a subscription
+        2. Adding paid subscribers to the channel
+        3. Reminders about the close expiration date of the subscription
+        4. Exclusion of non-renewing users
+      first_link_text: |
+        Tariffs have been created, the channel setup has been completed - it's time to start attracting an audience!
+        
+        *You can buy a subscription to your channel [following the link](${link})*
+        
+        ***Tip:* If you have several different traffic sources, you can create additional links and monitor their statistics separately. This will help you understand which source works best *
       errors:
         unavailable_delete_all_tariffs: ❌ Can't delete all tariffs
         feature_disabled: This feature is temporarily disabled. Execute the /start command to return to the main menu.
@@ -645,6 +680,9 @@ btn:
     no: No
     confirm: Confirm
     ok: Ok
+    next: Next
+    edit: Edit
+    delete: Delete
 
   menu:
     create_post: Create Post
@@ -681,18 +719,21 @@ btn:
       subscription: Subscription Control
 
   subscription:
-    settings: Subscription settings
+    settings: Paid subscription settings
     configure_tariffs: Setting tariffs
     create_tariff: Create tariff
-    create_subscribe_link: Create subscribe link
-    show_subscribe_links: Show subscribe links
+    add_tariff: Add tariff
+    create_subscribe_link: Create link
+    show_subscribe_links: Subscribe links
     show_balances: Show balances
     withdraw: Withdraw funds
     statistics: Statistics
     full_statistics_report: Full report
     delete_tariff: Delete tariff
-    edit_subscription_settings: Edit settings
+    edit_subscription_settings: Greeting settings
     regenerateJoinLink: Recreate join link
+    dont_show_again: Don't show again
+    add_additional_links: Create additional subscription link
 
   post:
     settings:
