@@ -741,6 +741,8 @@ btn:
 
   channels:
     add_channel: Добавить канал
+    add_other_channel: "Добавить другой канал"
+    back_to_webapp: "Назад в приложение"
     add_bot: Подключить бот
     add_change_bot: Изменить бот
     channel_added: Создать новый пост

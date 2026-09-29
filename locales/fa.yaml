@@ -508,6 +508,8 @@ btn:
 
   channels:
     add_channel: Add Channel
+    add_other_channel: "افزودن کانال دیگر"
+    back_to_webapp: "بازگشت به برنامه"
     add_bot: اضافه کردن ربات
     add_change_bot: Change Bot
     channel_added: Create Post

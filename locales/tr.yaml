@@ -494,6 +494,8 @@ btn:
 
   channels:
     add_channel: Kanal Ekle
+    add_other_channel: "Başka bir kanal ekle"
+    back_to_webapp: "Uygulamaya dön"
     add_bot: Bot Bağla
     add_change_bot: Bot Değiştir
     channel_added: Gönderi Oluştur

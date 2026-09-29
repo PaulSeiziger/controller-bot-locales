@@ -533,6 +533,8 @@ btn:
 
   channels:
     add_channel: Aggiungi canale
+    add_other_channel: "Aggiungi un altro canale"
+    back_to_webapp: "Torna all’app"
     add_bot: Connetti bot
     add_change_bot: Cambia bot
     channel_added: Crea post

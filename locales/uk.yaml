@@ -504,6 +504,8 @@ btn:
 
   channels:
     add_channel: Додати канал
+    add_other_channel: "Додати інший канал"
+    back_to_webapp: "Назад у застосунок"
     add_bot: Під'єднати бота
     add_change_bot: Змінити бота
     channel_added: Створити публікацію

@@ -727,6 +727,8 @@ btn:
 
   channels:
     add_channel: चैनल जोड़ें
+    add_other_channel: "दूसरा चैनल जोड़ें"
+    back_to_webapp: "ऐप में वापस"
     add_bot: बॉट कनेक्ट करें
     add_change_bot: बॉट बदलें
     channel_added: पोस्ट बनाएँ

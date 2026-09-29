@@ -536,6 +536,8 @@ btn:
 
   channels:
     add_channel: Adicionar Canal
+    add_other_channel: "Adicionar outro canal"
+    back_to_webapp: "Voltar ao aplicativo"
     add_bot: Conectar Bot
     add_change_bot: Alterar Bot
     channel_added: Criar Post
