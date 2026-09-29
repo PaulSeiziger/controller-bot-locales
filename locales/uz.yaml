@@ -726,8 +726,6 @@ btn:
 
   channels:
     add_channel: Kanal qo'shish
-    add_other_channel: "Boshqa kanal qo‘shish"
-    back_to_webapp: "Ilovaga qaytish"
     add_bot: Bot ulash
     add_change_bot: Botni almashtirish
     channel_added: Post yaratish

@@ -551,8 +551,6 @@ btn:
 
   channels:
     add_channel: 添加频道
-    add_other_channel: "添加其他频道"
-    back_to_webapp: "返回应用"
     add_bot: 连接机器人
     add_change_bot: 更换机器人
     channel_added: 创建帖子

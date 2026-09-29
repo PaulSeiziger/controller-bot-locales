@@ -500,8 +500,6 @@ btn:
     settings: Налады
   channels:
     add_channel: Дадаць канал
-    add_other_channel: "Дадаць іншы канал"
-    back_to_webapp: "Назад у прылажэнне"
     add_bot: Падлучыць бота
     add_change_bot: Змяніць бота
     channel_added: Стварыць допіс
